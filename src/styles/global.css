@@ -88,18 +88,27 @@ body {
 .section {
   padding: 90px 60px;
 }
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 24px;
+  }
+}
+
 .section-alt {
   background: var(--white);
 }
+
 .section-label {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 40px;
 }
+
 .section-label h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   color: var(--ink);
   white-space: nowrap;
 }

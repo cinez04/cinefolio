@@ -57,3 +57,21 @@
 .social-btn:hover {
   background: rgba(255, 255, 255, 0.28);
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-wrap {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+    gap: 30px;
+  }
+
+  .contact-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}

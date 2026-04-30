@@ -8,3 +8,10 @@
   border-top: 1px solid var(--border);
   background: var(--cream);
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+    font-size: 0.75rem;
+  }
+}

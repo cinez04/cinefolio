@@ -177,3 +177,54 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 120px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-tagline {
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    order: -1; /* Image first on tablet/mobile */
+  }
+
+  .avatar-frame {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero-name {
+    font-size: 3rem;
+  }
+
+  .stats-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .stat-chip {
+    padding: 10px 16px;
+    min-width: 100px;
+  }
+}
