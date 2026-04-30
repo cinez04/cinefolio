@@ -50,14 +50,3 @@
   letter-spacing: 1px;
   font-weight: 500;
 }
-
-/* Responsive */
-@media (max-width: 480px) {
-  .ach-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .ach-card {
-    padding: 20px;
-  }
-}
