@@ -12,6 +12,9 @@ import oasis_tshirt_back from "../assets/oasis/oasis_tshirt_back_mockup.png";
 import oasis_logo_final from "../assets/oasis/OASIS LOGO WITH NAMEfinal.png";
 import oasis_palette_typo from "../assets/oasis/image.png";
 
+// Resume Import
+import resume_file from "../assets/MIRANO_RESUME_2026.pdf";
+
 // EGD Imports
 import egd_bathroom_layout from "../assets/EGD/bathroom_layout.png";
 import egd_bathroom_mockup from "../assets/mockups/bathroom_mockup_01.png";
@@ -70,10 +73,7 @@ const CONFIG = {
   school: "Polytechnic University of the Philippines",
   degree: "Diploma in Information Technology",
 
-  resume_url: {
-  value: "/src/assets/MIRANO_RESUME_2026.pdf", 
-  kind: OptionKind.VIEWER
-},
+  resume_url: resume_file,
 
   socials: {
     github: "https://github.com/cinez04",        
