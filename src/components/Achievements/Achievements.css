@@ -1,0 +1,52 @@
+/* src/components/Achievements/Achievements.css */
+
+.ach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.ach-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.ach-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--blue-light));
+}
+
+.ach-card:hover {
+  box-shadow: 0 10px 32px rgba(0, 99, 167, 0.12);
+  transform: translateY(-3px);
+}
+
+.ach-icon {
+  font-size: 1.8rem;
+}
+
+.ach-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.ach-org {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
