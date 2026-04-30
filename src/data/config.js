@@ -70,7 +70,10 @@ const CONFIG = {
   school: "Polytechnic University of the Philippines",
   degree: "Diploma in Information Technology",
 
-  resume_url: "/src/assets/MIRANO_RESUME_2026.pdf",
+  resume_url: {
+  value: "/src/assets/MIRANO_RESUME_2026.pdf", 
+  kind: OptionKind.VIEWER
+},
 
   socials: {
     github: "https://github.com/cinez04",        
